@@ -1,0 +1,16 @@
+***For information to propagate down the component tree, parents pass props to their children
+***For information to propagate up the component tree, we typically invoke callbacks that were passed from parents to children as props
+***Components of the same level (sibling components) cannot communicate directly! We can only communicate up and down the component tree. So if multiple components need to share the same information, that state should live in the parent component (or a more general ancestor).
+
+1. Create a Header by refactoring <header> out of the 'App' component. 
+	Clicking on <button> inside the 'Header' component toggles dark mode
+
+2. Create a Filter component by refactoring <select> out of 'ShoppingList' component.
+	Changing the dropdown selection should s t i l l change which items are displayed.
+
+Will need to pass a callback function as a prop called 'onCategoryChange' to 'Filter' component in order to pass tests.
+
+"refactor" means to just change the way the code works.
+
+---------------------------------------------------------------
+Pass functions to children as props.
